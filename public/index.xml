@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://leexinmao.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Aug 2019 20:12:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://leexinmao.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Myfirstblog</title>
+      <link>https://leexinmao.github.io/post/myfirstblog/</link>
+      <pubDate>Thu, 01 Aug 2019 20:12:00 +0800</pubDate>
+      
+      <guid>https://leexinmao.github.io/post/myfirstblog/</guid>
+      <description>数据库框架查询  Connection conn = new GetSqlPool().getMydqlpool(); ​	QueryRunner queryRunner = new QueryRunner(); ​	String sql = &amp;quot;select * from customer&amp;quot;; ​	List&amp;lt;Object[]&amp;gt; list = new QueryRunner().query(conn,sql,new ArrayListHandler()); ​	​	System.out.println(&amp;quot;用户ID\t\t姓名卡号\t\t手机号\t\t\t邮编\t\t邮箱\t\t\t银行号\t\t密码\t\t卡号\t\t余额\t&amp;quot;); ​	for(Objec t[] object:list) { ​	for(Object e:object) { ​	System.out.print(e +&amp;quot;\t\t&amp;quot;); ​	}System.out.println(); ​	}  ​
+查询  ​	public static void setSalary(double money) throws Exception { ​	Scanner scanner = new Scanner(System.in); ​	Connection conn =new GetSqlPool().</description>
+    </item>
+    
+  </channel>
+</rss>
