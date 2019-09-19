@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://leexinmao.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 19 Sep 2019 09:43:29 +0800</lastBuildDate>
+    
+	<atom:link href="https://leexinmao.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First</title>
+      <link>https://leexinmao.github.io/post/first/</link>
+      <pubDate>Thu, 19 Sep 2019 09:43:29 +0800</pubDate>
+      
+      <guid>https://leexinmao.github.io/post/first/</guid>
+      <description> JSTL jstl要和EL嵌套使用才行
+首先声明使用jstl才可以使用
+在jsp页头上申明：&amp;lt;%@taglib prefix=&amp;ldquo;c&amp;rdquo; uri=&amp;ldquo;http://java.sun.com/jsp/jstl/core&amp;quot; %&amp;gt;
+ 先设置
+List&amp;lt;String&amp;gt; list = new ArrayList&amp;lt;String&amp;gt;(); list.add(&amp;quot;张飞&amp;quot;); list.add(&amp;quot;刘备&amp;quot;); list.add(&amp;quot;关羽&amp;quot;); list.add(&amp;quot;曹操&amp;quot;); list.add(&amp;quot;孔明&amp;quot;); list.add(&amp;quot;马超&amp;quot;); list.add(&amp;quot;典韦&amp;quot;); list.add(&amp;quot;虚竹&amp;quot;); req.setAttribute(&amp;quot;list&amp;quot;, list); Map&amp;lt;String, String&amp;gt; map = new HashMap&amp;lt;String, String&amp;gt;(); map.put(&amp;quot;诸葛亮&amp;quot;, &amp;quot;卧龙&amp;quot;); map.put(&amp;quot;庞统&amp;quot;, &amp;quot;凤雏&amp;quot;); map.put(&amp;quot;亲射虎&amp;quot;, &amp;quot;看孙郎&amp;quot;); map.put(&amp;quot;曹操&amp;quot;, &amp;quot;阿蛮&amp;quot;); req.setAttribute(&amp;quot;map&amp;quot;, map); req.getRequestDispatcher(&amp;quot;/jstl02.jsp&amp;quot;).forward(req, resp);   从jsp页面获取
+&amp;lt;c:forEach items=&amp;quot;${list}&amp;quot; var=&amp;quot;l&amp;quot; &amp;gt; ${l }&amp;lt;br&amp;gt; &amp;lt;/c:forEach&amp;gt; &amp;lt;br&amp;gt; &amp;lt;br&amp;gt; 下面是map &amp;lt;c:forEach items=&amp;quot;${map }&amp;quot; var=&amp;quot;m&amp;quot;&amp;gt; ${m } &amp;lt;/c:forEach&amp;gt;   items:取得需要遍历的集合 var:每次遍历出来的元素 varStatus:当前元素的转态 常用属性：count 取得当前记录的序号 begin:取值的起始下标 取值的结尾下标 step:取值的步长，表示 每隔几个取一个值  </description>
+    </item>
+    
+  </channel>
+</rss>

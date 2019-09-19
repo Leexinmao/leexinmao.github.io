@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <title>First // My New Hugo Site</title>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.56.3" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://leexinmao.github.io/css/main.min.f90f5edd436ec7b74ad05479a05705770306911f721193e7845948fb07fe1335.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="First"/>
+<meta name="twitter:description" content=" JSTL jstl要和EL嵌套使用才行
+首先声明使用jstl才可以使用
+在jsp页头上申明：&lt;%@taglib prefix=&ldquo;c&rdquo; uri=&ldquo;http://java.sun.com/jsp/jstl/core&quot; %&gt;
+ 先设置
+List&lt;String&gt; list = new ArrayList&lt;String&gt;(); list.add(&quot;张飞&quot;); list.add(&quot;刘备&quot;); list.add(&quot;关羽&quot;); list.add(&quot;曹操&quot;); list.add(&quot;孔明&quot;); list.add(&quot;马超&quot;); list.add(&quot;典韦&quot;); list.add(&quot;虚竹&quot;); req.setAttribute(&quot;list&quot;, list); Map&lt;String, String&gt; map = new HashMap&lt;String, String&gt;(); map.put(&quot;诸葛亮&quot;, &quot;卧龙&quot;); map.put(&quot;庞统&quot;, &quot;凤雏&quot;); map.put(&quot;亲射虎&quot;, &quot;看孙郎&quot;); map.put(&quot;曹操&quot;, &quot;阿蛮&quot;); req.setAttribute(&quot;map&quot;, map); req.getRequestDispatcher(&quot;/jstl02.jsp&quot;).forward(req, resp);   从jsp页面获取
+&lt;c:forEach items=&quot;${list}&quot; var=&quot;l&quot; &gt; ${l }&lt;br&gt; &lt;/c:forEach&gt; &lt;br&gt; &lt;br&gt; 下面是map &lt;c:forEach items=&quot;${map }&quot; var=&quot;m&quot;&gt; ${m } &lt;/c:forEach&gt;   items:取得需要遍历的集合 var:每次遍历出来的元素 varStatus:当前元素的转态 常用属性：count 取得当前记录的序号 begin:取值的起始下标 取值的结尾下标 step:取值的步长，表示 每隔几个取一个值  "/>
+
+    <meta property="og:title" content="First" />
+<meta property="og:description" content=" JSTL jstl要和EL嵌套使用才行
+首先声明使用jstl才可以使用
+在jsp页头上申明：&lt;%@taglib prefix=&ldquo;c&rdquo; uri=&ldquo;http://java.sun.com/jsp/jstl/core&quot; %&gt;
+ 先设置
+List&lt;String&gt; list = new ArrayList&lt;String&gt;(); list.add(&quot;张飞&quot;); list.add(&quot;刘备&quot;); list.add(&quot;关羽&quot;); list.add(&quot;曹操&quot;); list.add(&quot;孔明&quot;); list.add(&quot;马超&quot;); list.add(&quot;典韦&quot;); list.add(&quot;虚竹&quot;); req.setAttribute(&quot;list&quot;, list); Map&lt;String, String&gt; map = new HashMap&lt;String, String&gt;(); map.put(&quot;诸葛亮&quot;, &quot;卧龙&quot;); map.put(&quot;庞统&quot;, &quot;凤雏&quot;); map.put(&quot;亲射虎&quot;, &quot;看孙郎&quot;); map.put(&quot;曹操&quot;, &quot;阿蛮&quot;); req.setAttribute(&quot;map&quot;, map); req.getRequestDispatcher(&quot;/jstl02.jsp&quot;).forward(req, resp);   从jsp页面获取
+&lt;c:forEach items=&quot;${list}&quot; var=&quot;l&quot; &gt; ${l }&lt;br&gt; &lt;/c:forEach&gt; &lt;br&gt; &lt;br&gt; 下面是map &lt;c:forEach items=&quot;${map }&quot; var=&quot;m&quot;&gt; ${m } &lt;/c:forEach&gt;   items:取得需要遍历的集合 var:每次遍历出来的元素 varStatus:当前元素的转态 常用属性：count 取得当前记录的序号 begin:取值的起始下标 取值的结尾下标 step:取值的步长，表示 每隔几个取一个值  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://leexinmao.github.io/post/first/" />
+<meta property="article:published_time" content="2019-09-19T09:43:29+08:00" />
+<meta property="article:modified_time" content="2019-09-19T09:43:29+08:00" />
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://leexinmao.github.io"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <h1>My New Hugo Site</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+      <div class="app-header-social">
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">First</h1>
+      <div class="post-meta">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Sep 19, 2019
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div></div>
+    </header>
+    <div class="post-content">
+      
+
+<h5 id="jstl">JSTL</h5>
+
+<p>jstl要和EL嵌套使用才行</p>
+
+<p>首先声明使用jstl才可以使用</p>
+
+<p>在jsp页头上申明：&lt;%@taglib prefix=&ldquo;c&rdquo; uri=&ldquo;<a href="http://java.sun.com/jsp/jstl/core&quot;">http://java.sun.com/jsp/jstl/core&quot;</a> %&gt;</p>
+
+<ul>
+<li><p>先设置</p>
+
+<pre><code class="language-java">List&lt;String&gt; list = new ArrayList&lt;String&gt;();
+		list.add(&quot;张飞&quot;);
+		list.add(&quot;刘备&quot;);
+		list.add(&quot;关羽&quot;);
+		list.add(&quot;曹操&quot;);
+		list.add(&quot;孔明&quot;);
+		list.add(&quot;马超&quot;);
+		list.add(&quot;典韦&quot;);
+		list.add(&quot;虚竹&quot;);
+		req.setAttribute(&quot;list&quot;, list);
+		Map&lt;String, String&gt; map = new HashMap&lt;String, String&gt;();
+		map.put(&quot;诸葛亮&quot;, &quot;卧龙&quot;);
+		map.put(&quot;庞统&quot;, &quot;凤雏&quot;);
+		map.put(&quot;亲射虎&quot;, &quot;看孙郎&quot;);
+		map.put(&quot;曹操&quot;, &quot;阿蛮&quot;);
+		req.setAttribute(&quot;map&quot;, map);
+		req.getRequestDispatcher(&quot;/jstl02.jsp&quot;).forward(req, resp);
+</code></pre></li>
+</ul>
+
+<p>从jsp页面获取</p>
+
+<pre><code class="language-jsp">&lt;c:forEach items=&quot;${list}&quot; var=&quot;l&quot; &gt;
+	${l }&lt;br&gt;
+&lt;/c:forEach&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+下面是map
+&lt;c:forEach items=&quot;${map }&quot; var=&quot;m&quot;&gt;
+	${m }
+&lt;/c:forEach&gt;
+</code></pre>
+
+<ol>
+<li>items:取得需要遍历的集合</li>
+<li>var:每次遍历出来的元素</li>
+<li>varStatus:当前元素的转态 常用属性：count 取得当前记录的序号</li>
+<li>begin:取值的起始下标</li>
+<li>取值的结尾下标</li>
+<li>step:取值的步长，表示 每隔几个取一个值</li>
+</ol>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
